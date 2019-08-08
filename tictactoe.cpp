@@ -102,7 +102,7 @@ class [[eosio::contract("tictactoe")]] tictactoe : public eosio::contract {
 				if(mark==0)
 					return false;
 			}
-			return false;
+			return true;
 		}
 
 		bool is_winning(const uint8_t& mark, const vector<uint8_t>& board) const {
